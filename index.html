@@ -34,10 +34,16 @@
                 <a href="#education">Education</a>
             </li>
             <li>
+                <a href="#fiverr">Fiverr</a>
+            </li>
+            <li>
                 <a href="#projects">Projects</a>
             </li>
             <li>
                 <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#courses">Courses</a>
             </li>
             <li>
                 <a href="#contact">Contact</a>
@@ -50,7 +56,7 @@
         <div id="lead-content">
             <h1>Rafał 'Stukeley' Klinowski</h1>
             <h2>Freelancer &amp; IT Student</h2>
-            <a href="https://www.fiverr.com/stukeley" class="btn-rounded-white">View my Fiverr</a>
+            <a href="https://github.com/Stukeley" class="btn-rounded-white">View my GitHub</a>
         </div>
         <!-- End #lead-content -->
 
@@ -73,7 +79,7 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        Currently a student of Information Technology. Programming has been my hobby for about 4 years now, and during this time I have created dozens of projects. My favourite language is C# and it's the language I feel most comfortable in. I've worked with WinForms, WPF, UWP and Entity Framework to bring modern and functional apps to light. I can also help understand concepts and aspects of the language.
+                        Currently a second-year student of Information Technology at Politechnika Śląska, Poland. Programming has been my hobby for about 4 years now, and during this time I have created dozens of projects. My favourite language is C# and it's the language I feel most comfortable in. I've worked with WinForms, WPF, UWP and Entity Framework to bring modern and functional apps to light. I can also help understand concepts and aspects of the language.
                     </p>
                 </div>
             </div>
@@ -88,17 +94,11 @@
                 <h3>Fiverr</h3>
                 <h4>Freelancer</h4>
                 <p>
-                    I have been working as a Freelancer to create Desktop Applications and Chatbots, as well as teach my customers the C# language. My recent projects include:
+                    I have been working as a Freelancer to create Desktop Applications and Chatbots, as well as teach my customers the C# language. You can find some of the projects I have finished in the section below. You can also visit my Fiverr profile to see what I offer, and read the reviews I've got. Please note: because it was paid work, I cannot share source codes of those applications.
                 </p>
-                <p>
-                    - A Twitch.tv Chatbot to attract viewers to a new music-related channel
-                </p>
-                <p>
-                    - A medium-sized WPF application used to insert XML files into a database
-                </p>
-                <p>
-                    - An application that makes use of WebAPI, creates requests and packs data into XML files
-                </p>
+                <div style="text-align:center">
+                    <a href="https://fiverr.com/users/Stukeley">View my Fiverr profile</a>
+                </div>
             </div>
         </div>
     </div>
@@ -118,8 +118,50 @@
     </div>
     <!-- End #education -->
 
+    <div id="fiverr" class="optional-section background-alt">
+        <h2 class="heading">Fiverr works</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project no-image">
+                    <div class="project-info">
+                        <h3>Twilio Design</h3>
+                        <p>
+                            A design I made in WPF (with MaterialDesign) for adding and managing Twilio accounts and Cards. Each account has its own set of cards, and all are saved to a database. Cards are programatically added to Queue or Selected based on their queue status. I also implemented a simple MVVM pattern for taking care of the operations, such as selecting accounts and updating layout.
+                        </p>
+                        <a href="https://i.imgur.com/O8bsZex.png">View Design</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project no-image">
+                    <div class="project-info">
+                        <h3>Zodiac Sign Bot</h3>
+                        <p>
+                            A Twitch.tv bot for interacting with viewers on a new music-related channel. The bot automatically connects to the channel and whispers user a question: "What is your zodiac sign?". When the user responds, the bot sends out a random fun-fact based on the sign picked.
+                        </p>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project no-image">
+                    <div class="project-info">
+                        <h3>Arduino Twitch Bot</h3>
+                        <p>
+                            An application designed in WPF that acts as a Twitch.tv bot. The bot listens to Channel Points redemptions in the specified channel. Whenever a reward is redeemed, the bot sends out a signal (int) to Arduino using SerialPort connection. The channel name the bot connects to, as well as the signal for each reward, is customizable inside the app.
+                        </p>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+    <!-- End #fiverr-projects-->
+
     <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
+        <h2 class="heading">Personal projects</h2>
         <div class="container">
             <div class="row">
                 <div class="project no-image">
@@ -130,7 +172,7 @@
                     <div class="project-info">
                         <h3>The Library</h3>
                         <p>
-                            A project created using WPF for .NET Framework 4.8 and Material Design for XAML. It includes user accounts (with information stored in a local database), the ability to add authors or books and borrowing the latter. This is just a sample project that is not used seriously.
+                            A project created using WPF for .NET Framework 4.8 and Material Design for XAML. It includes user accounts (with information stored in a local database, but without using Entity Framework), the ability to add authors or books, and borrowing the latter. This is just a sample project that is not used seriously.
                         </p>
                         <a href="https://github.com/Stukeley/Biblioteka">View Project</a>
                     </div>
@@ -142,7 +184,7 @@
                     <div class="project-info">
                         <h3>Twitch Copypasta Bot</h3>
                         <p>
-                            A Twitch.tv bot that connects to a channel and automatically saves "copypastas" (messages that are spammed a lot in the chatroom). The application has a graphical interface created in WPF (using Material Design for XAML), and a database integration using Entity Framework.
+                            A Twitch.tv bot that connects to a channel and automatically saves "copypastas" (messages that are spammed a lot in the chatroom). The application has a graphical interface created in WPF (using Material Design for XAML), and a database integration using Entity Framework. Copypastas can also be added manually; they can be browsed, marked as favourite, etc.
                         </p>
                         <a href="https://github.com/Stukeley/twitch-copypasta-bot">View Project</a>
                     </div>
@@ -152,9 +194,30 @@
 
                 <div class="project no-image">
                     <div class="project-info">
-                        <h3>Upcoming: Mobile Phone</h3>
+                        <h3>Mobile Phone</h3>
                         <p>
-                            A WPF / UWP (haven't decided yet) application that simulates a mobile phone. Created following the MVVM architecture. Includes a lot of different applications, all with a graphical interface (like Calculator, Notes, etc). (UPCOMING)
+                            A project made with .NET Core 3.1, WPF and Material Design. It offers an interface looking just like a modern mobile phone, and includes several other working applications, such as: Calculator, Notepad, Timers, Phonebook and Photo Viewer. Implemented the MVVM architecture. Some data (notes, phone contacts) is saved to a local database using Entity Framework Core.
+                        </p>
+                        <a href="https://github.com/Stukeley/MobilePhone">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project no-image">
+                    <div class="project-info">
+                        <h3>Upcoming: Programming Clicker</h3>
+                        <p>
+                            An upcoming game to be made with MonoGame. This project is supposed to be a challenge for me, because I have never worked with MonoGame before. The game will be based on the Clicker genre, but in the programmers' world.
+                        </p>
+                        <p>
+                            - Game divided into: Operating Systems (go along with modern technologies and increase all yields), Development Environments (better IDEs increase passive points generation, as they are much more automated) and Languages (fresh programming languages increase active points generation, as they're more functional and easier to use).
+                        </p>
+                        <p>
+                            - Typing instead of clicking until modern Operating Systems are researched.
+                        </p>
+                        <p>
+                            - Made with MonoGame with OpenGL rendering.
                         </p>
                         <a href="#">View Project</a>
                     </div>
@@ -181,6 +244,28 @@
         </ul>
     </div>
     <!-- End #skills -->
+
+    <div id="courses" class="optional-section background-alt">
+        <h2 class="heading">Courses &amp; Literature</h2>
+        <div class="education-block" style="background-color:white">
+            <h3>Clean Code: A Handbook of Agile Software Craftsmanship</h3>
+            <span class="education-date">Aug 2020</span>
+            <h4>Robert C. Martin</h4>
+        </div>
+
+        <div class="education-block" style="background-color:white">
+            <h3>Programming with C# - Exam 70-483 Prep</h3>
+            <span class="education-date">Jul 2020</span>
+            <h4>Jesse Dietrichson</h4>
+        </div>
+
+        <div class="education-block" style="background-color:white">
+            <h3>C#. Praktyczny kurs. Wydanie II</h3>
+            <span class="education-date">Jun 2018</span>
+            <h4>Marcin Lis</h4>
+        </div>
+    </div>
+    <!-- End #courses -->
 
     <div id="contact">
         <h2>Get in Touch</h2>
@@ -215,7 +300,13 @@
                             <a href="https://github.com/Stukeley" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://fiverr.com/users/Stukeley" target="_blank"><i class="fas fa-dollar-sign" aria-hidden="true">f</i></a>
+                            <a href="https://www.facebook.com/Isgaroth/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/stukeleyak/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://fiverr.com/users/Stukeley" target="_blank"><i class="fas fa-dollar-sign" aria-hidden="true">fiverr.</i></a>
                         </li>
                     </ul>
                 </div>

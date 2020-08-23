@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\css",
+    "\\images",
+    "\\js",
+    "\\libs",
+    "\\libs\\font-awesome",
+    "\\libs\\font-awesome\\css",
+    "\\libs\\font-awesome\\scss",
+    "\\scss"
+  ],
+  "SelectedNode": "\\css\\bootstrap.min.css",
+  "PreviewInSolutionExplorer": false
+}
